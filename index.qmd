@@ -1,0 +1,259 @@
+---
+title: "Aurora Is a Web Application for Visualizing Non-Linear Graph"
+author: "Yangyang Li"
+date: "2024-04-02"
+fig-cap-location: bottom
+bibliography: references.bib
+format:
+  revealjs: 
+    theme: [moon, custom.scss]
+    footer: <yangyang.li@northwestern.edu>
+    logo: ./NM-Logo-Stacked-1C-W.png
+    slide-number: true
+    show-slide-number: all
+    chalkboard: false 
+    embed-resources: true
+    preview-links: auto
+    # embed-resources: true
+---
+
+## What Is the Problem? {.smaller}
+
+Central Dogma 
+![](./center_dogma.png)
+
+
+## Why It Matters {.smaller auto-animate=true} 
+
+::: {style="margin-top: -30px; font-size: .7em;"}
+- Construct Graph 
+:::
+![](./ConstructGraph.mp4)
+
+## Why It Matters {.smaller auto-animate=true} 
+
+::: {style="margin-top: -30px; font-size: 0.7em;"}
+- Find Transcripts 
+:::
+![](./GraphAlgorithm2.mp4)
+
+## Why It Matters {.smaller auto-animate=true} 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {style="margin-top: 100px; font-size: .7em;"}
+- Construct Graph 
+:::
+
+![](./ConstructGraph.mp4)
+:::
+
+::: {.column width="50%"}
+
+::: {style="margin-top: 100px; font-size: 0.7em;"}
+- Find Transcripts 
+:::
+![](./GraphAlgorithm2.mp4)
+:::
+
+::::
+
+
+
+<!-- ## Why It Matters {.smaller} -->
+
+<!-- :::: {.columns} -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ::: {style="margin-top: 100px; font-size: .7em;"} -->
+<!-- - Construct Graph  -->
+<!-- ::: -->
+
+<!-- ![](./ConstructGraph.mp4) -->
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ::: {style="margin-top: 100px; font-size: 0.7em;"} -->
+<!-- - Find Transcripts  -->
+<!-- ::: -->
+<!-- ![](./video/media/videos/main/1080p60/GraphAlgorithm2.mp4) -->
+<!-- ::: -->
+
+<!-- :::: -->
+
+## How Aurora Solves It  {.smaller}
+
+[![](./aurora1.png){height=500}](https://yangyangli.top/aurora/app.html){preview-link="true"}
+
+<!-- [Aurora](https://yangyangli.top/aurora/app.html){preview-link="true"} -->
+
+<!-- ## What does Non-Linear Transcriptomes mean? -->
+
+<!-- ![](./Figure1B.png){height=500} -->
+
+<!-- ::: aside  -->
+<!-- borrow from Tingyou -->
+<!-- ::: -->
+
+
+<!-- ## Why graph algorithm?  -->
+<!-- - Graph algorithms are well-suited to transcript assembly. -->
+<!-- - Graph algorithms can handle the complexity trancript structures. -->
+<!-- - Modeling transcript assembly using graph algorithms has led to significant advances in our understanding of non-linear variants. -->
+
+<!-- Classic example: Splice Graph [@Heber2002Jul] -->
+
+<!-- ## From Reads to Graphs  -->
+
+<!-- ![](./Figure1A.png){height=500} -->
+
+<!-- ::: aside  -->
+<!-- borrow from Tingyou -->
+<!-- ::: -->
+
+<!-- ## Graph-based representation of non-linear transcript {.smaller} -->
+
+<!-- :::: {.columns} -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ::: {style="margin-top: 50px; font-size: 0.8em;"} -->
+<!-- ![](./video/media/videos/main/1080p60/GraphGenerationExample.mp4){height=300 fig-align="center"} -->
+<!-- ::: -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ::: {style="margin-top: 50px; font-size: 0.8em;"} -->
+
+<!-- ### Vertices -->
+
+<!-- Vertices (a.k.a nodes) represent the transcriptome regions (may include multiple exons) between breakpoints. -->
+
+<!-- ### Edges -->
+
+<!-- Edges are the non-linear structure variantation (duplication, inversion ...) happend on transcriptome. -->
+<!-- ::: -->
+
+<!-- ::: {.callout-note } -->
+<!-- We build  the graph for every gene. -->
+<!-- ::: -->
+<!-- ::: -->
+
+
+<!-- ::: {.notes} -->
+<!-- ::: -->
+
+<!-- :::: -->
+
+
+
+<!-- ## Splice Graph vs Non-Linear Graph  {.smaller} -->
+
+<!-- ::: {layout-ncol=2} -->
+
+<!-- ![Figure A: Splice Graph [@BibEntry2023Mar]](./sp.png){height=200 width=400} -->
+
+<!-- ![Figure B: Non-Linear Graph (borrow from Tingyou)](./Figure2A.png){width=600} -->
+
+<!-- ::: -->
+
+
+<!-- ## Detecting Non-Linear Transcripts  -->
+
+<!-- :::: {.columns} -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ::: {style="margin-top: 100px; font-size: .7em;"} -->
+<!-- - Construct Graph  -->
+<!-- ::: -->
+
+<!-- ![](./ConstructGraph.mp4) -->
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ::: {style="margin-top: 100px; font-size: 0.7em;"} -->
+<!-- - Find Transcripts  -->
+<!-- ::: -->
+<!-- ![](./video/media/videos/main/1080p60/GraphAlgorithm2.mp4) -->
+<!-- ::: -->
+
+<!-- :::: -->
+
+
+<!-- ## Graph-based representation of transcript  {.smaller} -->
+
+<!-- :::: {.columns} -->
+
+<!-- ::: {.column width="50%"} -->
+<!-- ![](./case1.png){height=500 width=400} -->
+<!-- : Figure A: Case 1  -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+<!-- ![](./case3.png) -->
+<!-- : Figure B: Case 2 -->
+
+<!-- ::: -->
+
+<!-- :::: -->
+
+
+## The End {.center}
+
+:::  {.r-fit-text}
+Thanks for your attention!
+:::
+
+<!-- ## Summary   -->
+
+
+<!-- ::: {.callout-tip} -->
+<!-- ## Let's go back to biology  -->
+
+<!-- ::: -->
+
+<!-- - Detect non-linear transcript  -->
+<!-- - Provide new perspective to analyze long-read rna-seq data -->
+<!-- - Detect complex transcript structures -->
+
+
+
+<!-- ## Tree Algorithm: Why manipulate intervals -->
+
+<!-- ::: {style="margin-top: 0px;"} -->
+<!-- - One of fundamental and important tasks in bioinformatics -->
+<!-- - Identify overlapping exons, introns, or regulatory regions -->
+<!-- - Compare genomic intervals between different samples -->
+<!-- - Detect candidate genes or regulatory elements. -->
+<!-- - Detect structural variants. -->
+<!-- ::: -->
+
+<!-- ::: {.callout-caution} -->
+<!-- Math and theory will come. -->
+<!-- ::: -->
+
+
+
+<!-- ::: {style="margin-top: 50px; font-size: .4em;"} -->
+<!-- | Command           | Mean[s] | Min[s] | Max[s] | Relative | -->
+<!-- | :---------------- | ------: | -----: | -----: | -------: | -->
+<!-- | `coitree-neon`    |  5.636  | 5.386 | 7.295 |     1.00 | -->
+<!-- | `coitree-default` |  6.351 | 6.304 | 6.406 |     1.13 | -->
+<!-- | `bedtools`        |  223.421 | 223.585 | 224.342  |     44.60 | -->
+<!-- | `ailist`          |  6.559 | 6.508 | 6.743 |     1.16 | -->
+<!-- :  Table 4: A (4,816,112)  VS B-unsorted (44,426,501)  {tbl-colwidths="[55,25,25,25,25]"} -->
+
+<!-- ## References -->
+
+<!-- ::: {#refs} -->
+<!-- ::: -->
+
